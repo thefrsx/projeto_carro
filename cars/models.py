@@ -23,6 +23,6 @@ class Car(models.Model):
     photo = models.ImageField(upload_to='cars/', blank=True, null=True)
 
     # magic method do Python para fazer retornar um nome mais legível na página do /admin do Django (No projeto)
-    # Nesse caso, vai retornar o campo model como nome do objeto
+    # Nesse caso, vai retornar o campo model como nome do objeto.
     def __str__(self):
         return self.model
